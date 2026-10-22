@@ -1,0 +1,31 @@
+.page {
+  scroll-behavior: smooth;
+  font-family: Inter, sans-serif;
+
+  &__body {
+    background-color: $c-gray;
+  }
+
+  &__menu {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(-100%);
+
+    padding-bottom: 30px;
+
+    background-color: #f9f9f9;
+
+    transition: all $transition-time linear;
+
+    &:target {
+      transform: translateY(0);
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
