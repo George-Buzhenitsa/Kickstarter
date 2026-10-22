@@ -78,15 +78,35 @@ arrowLeft.addEventListener('click', () => {
   amount.textContent = `0${currentSlide + 1}`;
 });
 
-const en = document.querySelector('.lang__en');
-const ua = document.querySelector('.lang__ua');
+const en = document.querySelectorAll('.lang__en');
+const ua = document.querySelectorAll('.lang__ua');
 
-en.addEventListener('click', () => {
-  ua.style.color = '#828282';
-  en.style.color = '#333';
+console.log(en)
+
+en[0].addEventListener('click', () => {
+  ua[0].style.color = '#828282';
+  ua[1].style.color = '#828282';
+  en[0].style.color = '#333';
+  en[1].style.color = '#333';
 });
 
-ua.addEventListener('click', () => {
-  en.style.color = '#828282';
-  ua.style.color = '#333';
+ua[0].addEventListener('click', () => {
+  en[0].style.color = '#828282';
+  en[1].style.color = '#828282';
+  ua[0].style.color = '#333';
+  ua[1].style.color = '#333';
+});
+
+en[1].addEventListener('click', () => {
+  ua[1].style.color = '#828282';
+  ua[0].style.color = '#828282';
+  en[1].style.color = '#333';
+  en[0].style.color = '#333';
+});
+
+ua[1].addEventListener('click', () => {
+  en[1].style.color = '#828282';
+  en[0].style.color = '#828282';
+  ua[1].style.color = '#333';
+  ua[0].style.color = '#333';
 });
