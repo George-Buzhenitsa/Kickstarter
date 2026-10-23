@@ -81,8 +81,6 @@ arrowLeft.addEventListener('click', () => {
 const en = document.querySelectorAll('.lang__en');
 const ua = document.querySelectorAll('.lang__ua');
 
-console.log(en)
-
 en[0].addEventListener('click', () => {
   ua[0].style.color = '#828282';
   ua[1].style.color = '#828282';
@@ -111,7 +109,6 @@ ua[1].addEventListener('click', () => {
   ua[0].style.color = '#333';
 });
 
-
 const menu = document.querySelector('.menu');
 const openMenu = document.querySelector('.icon--burger-menu');
 
@@ -123,3 +120,9 @@ openMenu.addEventListener('click', () => {
 menu.addEventListener('click', () => {
   document.body.classList.remove('page__body__no-scroll');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash === '#menu') {
+    document.body.classList.add('page__body__no-scroll');
+  }
+})
