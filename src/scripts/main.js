@@ -110,3 +110,16 @@ ua[1].addEventListener('click', () => {
   ua[1].style.color = '#333';
   ua[0].style.color = '#333';
 });
+
+
+const menu = document.querySelector('.menu');
+const openMenu = document.querySelector('.icon--burger-menu');
+
+
+openMenu.addEventListener('click', () => {
+  document.body.classList.add('page__body__no-scroll');
+});
+
+menu.addEventListener('click', () => {
+  document.body.classList.remove('page__body__no-scroll');
+});

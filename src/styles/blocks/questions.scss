@@ -70,6 +70,8 @@
     padding: 12px 20px;
     border: 1px solid #828282;
 
+    resize: none;
+
     outline: none;
 
     @include tablet {
