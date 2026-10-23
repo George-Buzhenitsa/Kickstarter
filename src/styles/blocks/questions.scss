@@ -65,12 +65,12 @@
   }
 
   &__area {
+    resize: none;
+
     width: 100%;
     height: 128px;
     padding: 12px 20px;
     border: 1px solid #828282;
-
-    resize: none;
 
     outline: none;
 
