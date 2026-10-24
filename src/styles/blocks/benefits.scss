@@ -24,7 +24,7 @@
     width: 100%;
 
     @include tablet {
-      
+
       @include page-grid;
 
       row-gap: 65px;
@@ -42,7 +42,9 @@
 
     width: 100%;
 
-    transition: all 0.8s;
+    transition: all $transition-time linear;
+
+    @include animate(transform, scale(1.02));
 
     &--1 {
       @include tablet {

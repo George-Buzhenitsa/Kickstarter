@@ -52,12 +52,19 @@
       line-height: 24px;
       color: #333;
     }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px #fff inset;
+      -webkit-text-fill-color: #333;
+      caret-color: white;
+    }
   }
 
   &__input::placeholder {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    color: #BDBDBD;
 
     &::placeholder:valid {
       color: #eb57574d;
@@ -87,6 +94,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    color: #BDBDBD;
   }
 
   &__button {

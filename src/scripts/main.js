@@ -126,3 +126,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('page__body__no-scroll');
   }
 })
+
+const form = document.querySelector('.questions__form');
+const input = document.querySelector('input');
+const textarea = document.querySelector('textarea');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  input.value = '';
+  textarea.value = '';
+})

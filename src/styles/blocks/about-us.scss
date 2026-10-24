@@ -26,6 +26,8 @@
     position: relative;
 
     @include page-grid;
+
+    @include animate(transform, scale(1.02));
   }
 
   &__picture {
